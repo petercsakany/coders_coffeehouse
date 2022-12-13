@@ -1,5 +1,10 @@
+.page-header {
+    height: 50vh;
+}
+
 h1 {
     color: brown;
+    font-size: 3rem;
 }
 
 p {
@@ -61,6 +66,10 @@ footer>p {
 
 #cold-drinks-box {
     background-color: chocolate;
+}
+
+.drinks-box {
+    width: 33%;
 }
 
 form {
