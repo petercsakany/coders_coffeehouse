@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
 
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+
 h1 {
-    color: brown;
     font-size: 3rem;
 }
 
-p {
+h2 {
+    font-size: xx-large;
+}
+
+header {
+    color: beige;
+}
+
+header>p {
     color: white;
 }
 
@@ -17,18 +34,41 @@ header {
     height: 50vh;
 }
 
+.text-white {
+    color: #FFFFFF;
+}
+
+strong {
+    font-size: 1.3rem;
+}
+
+nav>a {
+    color: beige;
+    margin: 1rem;
+}
+
+nav>a:hover {
+    color: silver;
+}
+
 .bold {
     font-weight: bold;
 }
 
-body {
-    font-family: 'Open Sans', Arial, sans-serif;
+#coffee-box {
+    background-color: brown;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Merienda One', 'Brush Script MT', cursive;
+#tea-box {
+    background-color: #6f4e37;
+}
+
+#cold-drinks-box {
+    background-color: chocolate;
+}
+
+.drinks-box {
+    width: 33%;
 }
 
 a:hover {
@@ -50,49 +90,27 @@ footer>a {
     color: beige;
     text-decoration: none;
     padding: 0 15px;
+    font-size: 0.8rem;
 }
 
 footer>p {
     color: silver;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.text-white {
-    color: white;
-}
-
-.reasons-box {
-    background-color: chocolate;
-}
-
-#coffee-box {
-    background-color: brown;
-}
-
-#tea-box {
-    background-color: #6f4e37;
-}
-
-#cold-drinks-box {
-    background-color: chocolate;
-}
-
-.drinks-box {
-    width: 33%;
-}
-
-form {
-    margin-top: 2rem;
-}
-
-input[type="submit"] {
+input[type=submit] {
     margin-left: 0.75rem;
     padding: 0.75rem;
     background-color: #5e361b;
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+form {
+    width: 700px;
+}
+
+legend {
+    font-size: large;
+    font-weight: 600;
 }
