@@ -1,6 +1,4 @@
-.page-header {
-    height: 50vh;
-}
+@import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
 
 h1 {
     color: brown;
@@ -15,8 +13,22 @@ header {
     background-color: black;
 }
 
+.page-header {
+    height: 50vh;
+}
+
 .bold {
     font-weight: bold;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
 
 a:hover {
