@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
 }
 
 h1,
@@ -10,8 +11,30 @@ h3 {
     font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
 
+#contact {
+    margin-bottom: 50px;
+}
+
+.contact-boxed-container {
+    margin: 0 auto;
+    width: 66%;
+}
+
+.contact-box-left {
+    margin-top: -20px;
+    width: 250px;
+}
+
+contact-box-right {
+    margin-top: -20px;
+    text-align: center;
+    width: 250px;
+}
+
+
 h1 {
     font-size: 3rem;
+    margin: 0;
 }
 
 h2 {
@@ -30,8 +53,9 @@ header {
     background-color: black;
 }
 
-.page-header {
-    height: 50vh;
+#drinks {
+    padding: 1rem 0;
+    margin-bottom: 80px;
 }
 
 .text-white {
@@ -59,7 +83,7 @@ strong {
 }
 
 nav {
-    padding: 0;
+    padding: 1rem;
 }
 
 nav>a {
@@ -72,10 +96,6 @@ nav>a:hover {
     color: silver;
 }
 
-ul {
-    padding: 1rem;
-}
-
 .bold {
     font-weight: bold;
 }
@@ -84,8 +104,10 @@ small {
     font-style: italic;
 }
 
-#drinks {
-    padding: 0;
+img {
+    border-radius: 8px;
+    width: 96%;
+    margin: 2%;
 }
 
 #coffee-box {
@@ -98,14 +120,27 @@ small {
 
 #cold-drinks-box {
     background-color: chocolate;
+    margin: 1rem 0;
+}
+
+.reasons-box {
+    padding: 10px 5px 25px 5px;
+    border-radius: 8px;
+    width: 100%;
+    margin: 2%;
 }
 
 .drinks-box {
     width: 33%;
 }
 
-.reasons-box {
-    padding: 10px 5px 25px 5px;
+th,
+td {
+    border-bottom: 1px solid black;
+}
+
+ul {
+    padding: 0;
 }
 
 a:hover {
@@ -134,24 +169,19 @@ footer>p {
     color: silver;
 }
 
+fieldset {
+    border: none;
+    margin-top: 20px;
+}
+
 input[type=submit] {
     margin-left: 0.75rem;
+    margin-top: 20px;
     padding: 0.75rem;
     background-color: #5e361b;
     color: white;
     border: none;
     border-radius: 5px;
-}
-
-form {
-    width: 700px;
-    padding: 25px;
-}
-
-select {
-    padding-left: 10px;
-    height: 30px;
-    width: 100px;
 }
 
 input[type=text],
@@ -160,6 +190,16 @@ input[list=coffees] {
     height: 30px;
     width: 90%;
     padding-left: 10px;
+    margin: 0px auto;
+}
+
+#map-wrapper {
+    margin-bottom: 55px;
+    height: 300px;
+}
+
+label {
+    margin: 10px 15px 5px 0;
 }
 
 /* overrides css above */
@@ -167,8 +207,44 @@ input[list=coffees] {
     width: 45%;
 }
 
+select {
+    height: 30px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+form {
+    width: 700px;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 25px auto;
+}
+
 legend {
     font-size: large;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 20px 0 10px 0;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+#terms {
+    margin: 1.5rem 0 0 15px;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    height: 200px;
+    width: 90%;
+}
+
+.checkboxes-box div {
+    margin-top: 15px;
+}
+
+#reasons li {
+    margin-top: 5%;
 }
