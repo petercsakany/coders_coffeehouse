@@ -38,11 +38,32 @@ header {
     color: #FFFFFF;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
 strong {
     font-size: 1.3rem;
 }
 
+small {
+    font-style: italic;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 nav>a {
+    text-decoration: none;
     color: beige;
     margin: 1rem;
 }
@@ -113,4 +134,5 @@ form {
 legend {
     font-size: large;
     font-weight: 600;
+    text-transform: uppercase;
 }
