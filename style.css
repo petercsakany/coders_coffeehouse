@@ -94,6 +94,10 @@ nav>a:hover {
     color: silver;
 }
 
+li {
+    list-style-type: none;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -130,7 +134,7 @@ img {
 
 .vertical-center {
     position: relative;
-    top: 50%;
+    top: 30%;
 }
 
 .one-third-width-column {
@@ -173,12 +177,18 @@ img {
 .contact-box-left {
     width: 250px;
     margin-top: -20px;
+    float: left;
 }
 
 .contact-box-right {
     width: 250px;
     text-align: right;
     margin-top: -20px;
+    float: right;
+}
+
+.spacer {
+    clear: both;
 }
 
 .contact-box-center {
@@ -247,6 +257,18 @@ input[type=submit] {
     border-radius: 5px;
 }
 
+input[type=reset] {
+
+    margin-top: 20px;
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: white;
+    color: #5e361b;
+    border: 1px solid #5e361b;
+    border-radius: 5px;
+}
+
+
 input[type=text],
 input[type=email],
 input[list=coffees] {
@@ -262,7 +284,7 @@ input[list=coffees] {
 }
 
 select {
-    height: 30px;
+    height: 36px;
     width: 100px;
     padding-left: 10px;
 }
@@ -286,6 +308,14 @@ legend {
     margin: 20px 0 10px 0;
 }
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
 label {
     margin: 10px 15px 5px 0;
 }
@@ -304,13 +334,14 @@ label {
     padding: 0.5rem;
     margin: 1.5rem 0 0 15px;
     border: 1px solid grey;
+    overflow: scroll;
 }
 
 /* map */
 #map-wrapper {
 
     height: 300px;
-    margin-bottom: 55px;
+    margin-bottom: 107px;
 }
 
 #map {
