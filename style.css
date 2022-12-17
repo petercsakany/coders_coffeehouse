@@ -110,14 +110,37 @@ img {
 
 #coffee-box {
     background-color: brown;
+    position: relative;
+    left: 70px;
+    top: -15px;
 }
 
 #tea-box {
     background-color: #6f4e37;
+    position: relative;
+    z-index: 1;
 }
 
 #cold-drinks-box {
     background-color: chocolate;
+    position: relative;
+    right: 70px;
+    top: -15px;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+}
+
+.one-third-width-column {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.two-thirds-width-column {
+    width: 66.66%;
+    display: inline-block;
 }
 
 .reasons-box {
@@ -126,11 +149,15 @@ img {
     width: 100%;
     margin: 2%;
     background-color: chocolate;
+    position: relative;
+    left: 20%;
+    top: 30px;
 }
 
 .drinks-box {
     width: 33%;
     margin: 1rem 0;
+    display: inline-block;
 }
 
 /* padding to allow for fixed footer */
@@ -183,6 +210,11 @@ footer {
     background-color: #6f4e37;
     padding: 1em;
     text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
 }
 
 footer>span {
@@ -241,6 +273,10 @@ form {
     border-radius: 8px;
     margin: 25px auto;
     background-color: white;
+}
+
+.block-label {
+    display: block;
 }
 
 legend {

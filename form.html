@@ -35,15 +35,15 @@
       <legend>Your details</legend>
 
       <div>
-        <label for="name-field">Name</label>
+        <label for="name-field" class="block-label">Name</label>
         <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
       </div>
       <div>
-        <label for="email-field">Email</label>
+        <label for="email-field" class="block-label">Email</label>
         <input id="email-field" type="email" name="email" placeholder="Your email" required>
       </div>
 
-      <label for="age">Age</label>
+      <label for="age" class="block-label">Age</label>
       <select id="age" name="age" required>
         <option value="under-20">Under 20</option>
         <option value="20s">20-29</option>
@@ -59,7 +59,7 @@
     <fieldset>
       <legend>Our products</legend>
       <div>
-        <label for="fav-coffee">What is your favourite coffee?</label>
+        <label for="fav-coffee" class="block-label">What is your favourite coffee?</label>
         <input id="fav-coffee" list="coffees" name="fav-coffee" required>
         <datalist id="coffees">
           <option value="Latte">
@@ -123,7 +123,7 @@
 
     <fieldset>
       <legend>Feedback</legend>
-      <label for="feedback">How can we improve your experience with us?</label>
+      <label for="feedback" class="block-label">How can we improve your experience with us?</label>
       <br>
       <textarea id="feedback" rows="4" cols="87" name="feedback"></textarea>
     </fieldset>
@@ -188,7 +188,7 @@
       </p>
     </div>
 
-    <input type="submit" value="Enter prize draw">
+    <input type="submit" class="block-label" value="Enter prize draw">
     <input type="reset" value="Reset Form">
 
   </form>
