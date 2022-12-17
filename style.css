@@ -3,6 +3,7 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
+    background-color: whitesmoke;
 }
 
 h1,
@@ -10,27 +11,6 @@ h2,
 h3 {
     font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
-
-#contact {
-    margin-bottom: 50px;
-}
-
-.contact-boxed-container {
-    margin: 0 auto;
-    width: 66%;
-}
-
-.contact-box-left {
-    margin-top: -20px;
-    width: 250px;
-}
-
-contact-box-right {
-    margin-top: -20px;
-    text-align: center;
-    width: 250px;
-}
-
 
 h1 {
     font-size: 3rem;
@@ -56,10 +36,28 @@ header {
 #drinks {
     padding: 1rem 0;
     margin-bottom: 80px;
+    background: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffee-beans.jpg') center center / cover no-repeat fixed;
 }
 
 .text-white {
     color: #FFFFFF;
+}
+
+.black-background {
+    background-color: black;
+}
+
+#home {
+    background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffeehouse.jpg');
+}
+
+.page-header {
+    height: 50vh;
+    background: center 75% / cover no-repeat;
+}
+
+.form-page-header {
+    background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/table.jpg')
 }
 
 .text-center {
@@ -120,7 +118,6 @@ img {
 
 #cold-drinks-box {
     background-color: chocolate;
-    margin: 1rem 0;
 }
 
 .reasons-box {
@@ -128,10 +125,40 @@ img {
     border-radius: 8px;
     width: 100%;
     margin: 2%;
+    background-color: chocolate;
 }
 
 .drinks-box {
     width: 33%;
+    margin: 1rem 0;
+}
+
+/* padding to allow for fixed footer */
+#contact {
+    margin-bottom: 50px;
+}
+
+.contact-boxes-container {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.contact-box-left {
+    width: 250px;
+    margin-top: -20px;
+}
+
+.contact-box-right {
+    width: 250px;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.contact-box-center {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 th,
@@ -141,6 +168,10 @@ td {
 
 ul {
     padding: 0;
+}
+
+#reasons li {
+    margin-top: 5%;
 }
 
 a:hover {
@@ -175,8 +206,8 @@ fieldset {
 }
 
 input[type=submit] {
-    margin-left: 0.75rem;
     margin-top: 20px;
+    margin-left: 0.75rem;
     padding: 0.75rem;
     background-color: #5e361b;
     color: white;
@@ -190,16 +221,7 @@ input[list=coffees] {
     height: 30px;
     width: 90%;
     padding-left: 10px;
-    margin: 0px auto;
-}
-
-#map-wrapper {
-    margin-bottom: 55px;
-    height: 300px;
-}
-
-label {
-    margin: 10px 15px 5px 0;
+    margin: 0 auto;
 }
 
 /* overrides css above */
@@ -218,6 +240,7 @@ form {
     padding: 25px;
     border-radius: 8px;
     margin: 25px auto;
+    background-color: white;
 }
 
 legend {
@@ -227,18 +250,8 @@ legend {
     margin: 20px 0 10px 0;
 }
 
-#map {
-    height: 100%;
-    width: 100%;
-    border: none;
-}
-
-#terms {
-    margin: 1.5rem 0 0 15px;
-    padding: 0.5rem;
-    border: 1px solid grey;
-    height: 200px;
-    width: 90%;
+label {
+    margin: 10px 15px 5px 0;
 }
 
 .checkboxes-box div {
@@ -247,4 +260,25 @@ legend {
 
 #reasons li {
     margin-top: 5%;
+}
+
+#terms {
+    height: 200px;
+    width: 90%;
+    padding: 0.5rem;
+    margin: 1.5rem 0 0 15px;
+    border: 1px solid grey;
+}
+
+/* map */
+#map-wrapper {
+
+    height: 300px;
+    margin-bottom: 55px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    border: none;
 }
